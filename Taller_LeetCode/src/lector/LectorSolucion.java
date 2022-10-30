@@ -50,11 +50,14 @@ public class LectorSolucion {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        String ruta = "C:/Users/FREDDY/Documents/fichero.txt";
-        File file = new File(ruta);
+        Scanner sc = new Scanner(System.in);
+        String ruta = sc.next();
+
+        File fichero = new File(ruta);
+        
         LectorSolucion lector = new LectorSolucion();
 
-        int[] nums = lector.LeeNumerosFichero(file);
+        int[] nums = lector.LeeNumerosFichero(fichero);
         
         int[] exa = {2,1};
 
