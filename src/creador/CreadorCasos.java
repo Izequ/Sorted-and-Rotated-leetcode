@@ -110,7 +110,7 @@ public class CreadorCasos {
         datos.print(casos);
 
         long endTime = System.nanoTime();
-        System.out.println("Duración: " + (endTime - startTime) / 1e6 + " ms");
+        System.out.println("Duracion: " + (endTime - startTime) / 1e6 + " ms");
         
         datos.crearArchivo(casos, ruta);
 
