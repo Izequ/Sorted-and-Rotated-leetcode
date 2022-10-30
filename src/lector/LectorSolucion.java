@@ -66,15 +66,23 @@ public class LectorSolucion {
         String ruta = sc.next();
 
         File fichero = new File(ruta);
-        
+
         LectorSolucion lector = new LectorSolucion();
 
         int[] nums = lector.LeeNumerosFichero(fichero);
 
         lector.print(nums);
-                
+
+        //process
+        long startTime = System.nanoTime();
+
         boolean cmp = lector.check(nums);
+
+        long endTime = System.nanoTime();
+
         System.out.println(cmp);
+
+        System.out.println("Duracion: " + (endTime - startTime) / 1e6 + " ms");
 
     }
 }
