@@ -48,6 +48,18 @@ public class LectorSolucion {
         }
     }
 
+    public void print(int arr[]) {
+        System.out.print("int arr[] = { ");
+        for (int j = 0; j < arr.length; j++) {
+            if (j == arr.length - 1) {
+                System.out.print(arr[j] + "");
+            } else {
+                System.out.print(arr[j] + ", ");
+            }
+        }
+        System.out.println("};");
+    }
+
     public static void main(String[] args) throws FileNotFoundException {
 
         Scanner sc = new Scanner(System.in);
@@ -58,17 +70,9 @@ public class LectorSolucion {
         LectorSolucion lector = new LectorSolucion();
 
         int[] nums = lector.LeeNumerosFichero(fichero);
-        
-        int[] exa = {2,1};
 
-        for (int j = 0; j < nums.length; j++) {
-            if (j == nums.length - 1) {
-                System.out.print(nums[j] + "");
-            } else {
-                System.out.print(nums[j] + ", ");
-            }
-        }
-        
+        lector.print(nums);
+                
         boolean cmp = lector.check(nums);
         System.out.println(cmp);
 
