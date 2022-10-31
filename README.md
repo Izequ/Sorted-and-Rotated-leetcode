@@ -6,12 +6,16 @@ Ejercicio: 1752. Check if Array Is Sorted and Rotated.
 Dada una matriz nums, devuelve true si la matriz se ordenó originalmente en orden no decreciente y luego se giró una cierta cantidad de posiciones (incluido cero). De lo contrario, regresa false.
 Puede haber duplicados en la matriz original.
 Nota: Una matriz A rotada por xposiciones da como resultado una matriz B de la misma longitud tal que A[i] == B[(i+x) % A.length], donde %es la operación de módulo.
-Puntos
-1) Resolver el problema en la plataforma https://leetcode.com/
+
+Puntos:
+1) Resolver el problema en la plataforma https://leetcode.com/.
+
  ![image](https://user-images.githubusercontent.com/71033260/198909538-7982dedb-62e7-44e0-8fa3-a1a8bb648e2d.png)
 
 2) Desarrollar una aplicación que genera al menos 100 casos de prueba para el problema. Los casos deben cubrir todas las posibilidades de casos del problema, de manera equilibrada.
-En el paquete creador se encuentra la clase que genera los casos de prueba para nuestro ejercicio, se llama CreadorCasos.java
+
+En el paquete creador se encuentra la clase que genera los casos de prueba para nuestro ejercicio, se llama CreadorCasos.java.
+
  ![image](https://user-images.githubusercontent.com/71033260/198909551-347eced3-a0d4-43ee-b9fc-53a0eb268f1e.png)
 
 Para el ejercicio se cuentan con una serie de métodos para cubrir todos los casos de prueba posibles:
