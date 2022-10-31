@@ -54,6 +54,38 @@ public class CreadorCasos {
             r = r + 1;  //2
         } while (r < arr.length - 1); //2
     }
+    
+     public void ordenarPar(int a[]) {
+        int tmp = 0, r = 0, s = 0;  //3
+        do {
+            s = r + 1;  //2
+            while (s < a.length / 2) {  //1
+                if (a[s] < a[r]) {  //1
+                    tmp = (int) a[s]; //1
+                    a[s] = a[r];    //1
+                    a[r] = tmp; //1
+                }
+                s++;    //1
+            }
+            r = r + 1;  //2
+        } while (r < a.length - 1); //2
+    }
+
+    public void ordenarDes(int a[]) {
+        int tmp = 0, r = 0, s = 0;  //3
+        do {
+            s = r + 1;  //2
+            while (s < a.length) {  //1
+                if (a[s] > a[r]) {  //1
+                    tmp = (int) a[s]; //1
+                    a[s] = a[r];    //1
+                    a[r] = tmp; //1
+                }
+                s++;    //1
+            }
+            r = r + 1;  //2
+        } while (r < a.length - 1); //2
+    }
 
     public void print(int arr[]) {
         System.out.print("int arr[] = { ");
@@ -96,22 +128,46 @@ public class CreadorCasos {
         Scanner sc = new Scanner(System.in);
         int tope = sc.nextInt();
         String ruta = sc.next();
+        
+        System.out.println("0 = Ascendente, 1 = Descendente, 2 = Ordenado Parcial, 3 = Desorden");
+        int orden = sc.nextInt();
 
+        //String ruta = "C:/Users/FREDDY/Documents/fichero.txt";
         int[] casos = new int[tope];
 
         CreadorCasos datos = new CreadorCasos();
-        
-        //process
 
+        //process
         long startTime = System.nanoTime();
 
         datos.createNonRepeats(casos, tope);
+
+        switch (orden) {
+            case 0: {
+                datos.ordenarAs(casos);
+                break;
+            }
+            case 1: {
+                datos.ordenarDes(casos);
+                break;
+            }
+            case 2: {
+                datos.ordenarPar(casos);
+                break;
+            }
+            case 3: {
+                break;
+            }
+        }
         //datos.ordenarAs(casos);
-        datos.print(casos);
+        //datos.ordenarDes(casos);
+        //datos.ordenarPar(casos);
 
         long endTime = System.nanoTime();
+        datos.print(casos);
+
         System.out.println("Duracion: " + (endTime - startTime) / 1e6 + " ms");
-        
+
         datos.crearArchivo(casos, ruta);
 
     }
