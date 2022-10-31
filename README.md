@@ -7,12 +7,12 @@ Dada una matriz nums, devuelve true si la matriz se ordenó originalmente en ord
 Puede haber duplicados en la matriz original.
 Nota: Una matriz A rotada por xposiciones da como resultado una matriz B de la misma longitud tal que A[i] == B[(i+x) % A.length], donde %es la operación de módulo.
 
-### Puntos: ###
-1) Resolver el problema en la plataforma https://leetcode.com/.
+## Puntos: ##
+### 1) Resolver el problema en la plataforma https://leetcode.com/. ###
 
  ![image](https://user-images.githubusercontent.com/71033260/198909538-7982dedb-62e7-44e0-8fa3-a1a8bb648e2d.png)
 
-2) Desarrollar una aplicación que genera al menos 100 casos de prueba para el problema. Los casos deben cubrir todas las posibilidades de casos del problema, de manera equilibrada.
+### 2) Desarrollar una aplicación que genera al menos 100 casos de prueba para el problema. Los casos deben cubrir todas las posibilidades de casos del problema, de manera equilibrada. ###
 
    En el paquete creador se encuentra la clase que genera los casos de prueba para nuestro ejercicio, se llama CreadorCasos.java.
 
@@ -23,23 +23,23 @@ Para el ejercicio se cuentan con una serie de métodos para cubrir todos los cas
 Para la creación tenemos los métodos:
 
 •	createRepeats(int arr[], int rango).
-Crea el arreglo con números repetidos en un rango de máximo determinado como parametro.
+  Crea el arreglo con números repetidos en un rango de máximo determinado como parametro.
 
 •	createNonRepeats(int arr[], int rango).
-Crea el arreglo con números no repetidos en un rango máximo determinado como parámetro.
+  Crea el arreglo con números no repetidos en un rango máximo determinado como parámetro.
 
 o	En estos casos se crean en orden aleatorio lo cual cubre la opción de un arreglo sin orden alguno.
 
 Para el ordenamiento tenemos los métodos:
 
 •	ordenarAs(int arr[]).
-Ordena todos los números del arreglo de forma ascendente.
+  Ordena todos los números del arreglo de forma ascendente.
 
 •	ordenarPar(int a[]).
-Ordena la mitad de los números del arreglo de forma ascendente.
+  Ordena la mitad de los números del arreglo de forma ascendente.
 
 •	ordenarDes(int a[]).
-Ordena la mitad de los números del arreglo de forma descendente.
+  Ordena la mitad de los números del arreglo de forma descendente.
 
 La clase también cuenta con un método print(int arr[]) que imprime el arreglo generado.
 
@@ -73,7 +73,7 @@ Para los casos de los arreglos ordenados debe quitarse el comentario dependiendo
 
  ![image](https://user-images.githubusercontent.com/71033260/198909603-8e75d709-68ec-4c53-a339-388fe9ad4b4e.png)
 
-3) Desarrollar una aplicación completa, con main y lectura de datos, de manera que se pruebe la solución independientemente de la plataforma https://leetcode.com/. Esta solución debe ser consistente con la solución realizada en el numeral 1.
+### 3) Desarrollar una aplicación completa, con main y lectura de datos, de manera que se pruebe la solución independientemente de la plataforma https://leetcode.com/. Esta solución debe ser consistente con la solución realizada en el numeral 1. ###
 
 En el paquete lector se encuentra la clase que lee y procesa el archivo de texto con el arreglo de números generado.
 
@@ -82,13 +82,13 @@ En el paquete lector se encuentra la clase que lee y procesa el archivo de texto
 En la clase se tienen 3 métodos, para el desarrollo de nuestro ejercicio:
 
 •	LeeNumerosFichero(File f).
-Este método es el que lee el archivo txt en el que se encuentran los datos y los guarda en un arreglo.
+  Este método es el que lee el archivo txt en el que se encuentran los datos y los guarda en un arreglo.
 
 •	check(int arr[]).
-ESTE es el método que da solución a nuestro ejercicio Check if Array Is Sorted and Rotated.
+  ESTE es el método que da solución a nuestro ejercicio Check if Array Is Sorted and Rotated.
 
 •	print(int arr[]).
-que imprime el arreglo generado en esta clase.
+  Que imprime el arreglo generado en esta clase.
 
 Metodo Main de la clase.
 
