@@ -1,6 +1,6 @@
 # Sorted-and-Rotated-leetcode
-##TALLER PROBLEMAS BÚSQUEDA Y ORDENAMIENTO##
-###Grupo 2 - 1151494###
+## TALLER PROBLEMAS BÚSQUEDA Y ORDENAMIENTO ##
+### Grupo 2 - 1151494 ###
 Ejercicio: 1752. Check if Array Is Sorted and Rotated.
 Dada una matriz nums, devuelve true si la matriz se ordenó originalmente en orden no decreciente y luego se giró una cierta cantidad de posiciones (incluido cero). De lo contrario, regresa false.
 Puede haber duplicados en la matriz original.
