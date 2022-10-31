@@ -14,17 +14,22 @@ Puntos:
 
 2) Desarrollar una aplicación que genera al menos 100 casos de prueba para el problema. Los casos deben cubrir todas las posibilidades de casos del problema, de manera equilibrada.
 
-En el paquete creador se encuentra la clase que genera los casos de prueba para nuestro ejercicio, se llama CreadorCasos.java.
+   En el paquete creador se encuentra la clase que genera los casos de prueba para nuestro ejercicio, se llama CreadorCasos.java.
 
  ![image](https://user-images.githubusercontent.com/71033260/198909551-347eced3-a0d4-43ee-b9fc-53a0eb268f1e.png)
 
 Para el ejercicio se cuentan con una serie de métodos para cubrir todos los casos de prueba posibles:
+
 Para la creación tenemos los métodos:
+
 •	createRepeats(int arr[], int rango)
 Crea el arreglo con números repetidos en un rango de máximo determinado como parametro.
+
 •	createNonRepeats(int arr[], int rango)
 Crea el arreglo con números no repetidos en un rango máximo determinado como parámetro.
+
 o	En estos casos se crean en orden aleatorio lo cual cubre la opción de un arreglo sin orden alguno.
+
 Para el ordenamiento tenemos los métodos:
 •	ordenarAs(int arr[])
 Ordena todos los números del arreglo de forma ascendente.
