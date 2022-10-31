@@ -23,9 +23,11 @@ Para el ejercicio se cuentan con una serie de métodos para cubrir todos los cas
 Para la creación tenemos los métodos:
 
 •	createRepeats(int arr[], int rango).
+
   Crea el arreglo con números repetidos en un rango de máximo determinado como parametro.
 
 •	createNonRepeats(int arr[], int rango).
+
   Crea el arreglo con números no repetidos en un rango máximo determinado como parámetro.
 
 o	En estos casos se crean en orden aleatorio lo cual cubre la opción de un arreglo sin orden alguno.
@@ -33,12 +35,15 @@ o	En estos casos se crean en orden aleatorio lo cual cubre la opción de un arre
 Para el ordenamiento tenemos los métodos:
 
 •	ordenarAs(int arr[]).
+
   Ordena todos los números del arreglo de forma ascendente.
 
 •	ordenarPar(int a[]).
+
   Ordena la mitad de los números del arreglo de forma ascendente.
 
 •	ordenarDes(int a[]).
+
   Ordena la mitad de los números del arreglo de forma descendente.
 
 La clase también cuenta con un método print(int arr[]) que imprime el arreglo generado.
@@ -82,12 +87,15 @@ En el paquete lector se encuentra la clase que lee y procesa el archivo de texto
 En la clase se tienen 3 métodos, para el desarrollo de nuestro ejercicio:
 
 •	LeeNumerosFichero(File f).
+
   Este método es el que lee el archivo txt en el que se encuentran los datos y los guarda en un arreglo.
 
 •	check(int arr[]).
+
   ESTE es el método que da solución a nuestro ejercicio Check if Array Is Sorted and Rotated.
 
 •	print(int arr[]).
+
   Que imprime el arreglo generado en esta clase.
 
 Metodo Main de la clase.
