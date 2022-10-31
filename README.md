@@ -9,5 +9,7 @@ Nota: Una matriz A rotada por xposiciones da como resultado una matriz B de la m
 ### 1) Resolver el problema en la plataforma https://leetcode.com/
 ![image](https://user-images.githubusercontent.com/71033260/199124722-da23756b-b330-4f94-81f2-67e11ebcb6f2.png)
 ![image](https://user-images.githubusercontent.com/71033260/199124739-3fe56b3d-3135-4a94-ad71-3892fefff124.png)
+
 Captura de envió. 
+
 ![image](https://user-images.githubusercontent.com/71033260/199124761-0ec33940-0ee1-43ce-a3a7-fc84a24c97e1.png)
